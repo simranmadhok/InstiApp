@@ -7,19 +7,19 @@
     android:scrollbars="vertical"
     tools:context="app.insti.fragment.FileComplaintFragment">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/Widget.AppCompat.ActionBar">
 
-            <android.support.design.widget.CollapsingToolbarLayout
+            <com.google.android.material.appbar.CollapsingToolbarLayout
                 android:id="@+id/collapsing_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <android.support.v4.view.ViewPager
+                        <androidx.viewpager.widget.ViewPager
                             android:id="@+id/complaint_image_view_pager"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
@@ -55,11 +55,11 @@
 
                 </LinearLayout>
 
-            </android.support.design.widget.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:id="@+id/nested_scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -82,7 +82,7 @@
                         android:paddingHorizontal="5dp"
                         android:weightSum="10">
 
-                        <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        <com.google.android.material.textfield.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:id="@+id/editTextIncCreditScoreLayout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                                 android:textColorHint="#4a4a4a"
                                 android:textSize="14sp" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <ProgressBar
                             android:id="@+id/pb_loading_indicator"
@@ -112,7 +112,7 @@
                             android:layout_gravity="right|center_vertical"
                             android:visibility="gone" />
 
-                        <android.support.v7.widget.AppCompatImageButton
+                        <androidx.appcompat.widget.AppCompatImageButton
                             android:id="@+id/add_image"
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="5dp">
 
-                        <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        <com.google.android.material.textfield.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:hintTextAppearance="@style/edit_text_hint_apperarance">
@@ -145,7 +145,7 @@
                                 android:textColorHint="#4a4a4a"
                                 android:textSize="14sp" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     </FrameLayout>
 
@@ -154,7 +154,7 @@
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="5dp">
 
-                        <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        <com.google.android.material.textfield.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:hintTextAppearance="@style/edit_text_hint_apperarance">
@@ -171,11 +171,11 @@
                                 android:textColorHint="#4a4a4a"
                                 android:textSize="14sp" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     </FrameLayout>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="5sp"
@@ -187,7 +187,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -222,7 +222,7 @@
                         android:paddingHorizontal="5dp"
                         android:weightSum="100">
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/textLayoutTags"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -239,7 +239,7 @@
                                 android:textColorHint="#66000000"
                                 android:textSize="14sp" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <ImageButton
                             android:id="@+id/imageButtonAddTags"
@@ -284,7 +284,7 @@
 
             </LinearLayout>
 
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
         <RelativeLayout
             android:id="@+id/layout_buttons"
@@ -316,6 +316,6 @@
 
         </RelativeLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </LinearLayout>
